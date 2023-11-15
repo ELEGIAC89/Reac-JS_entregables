@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ProfileCard from "./Components/ProfileCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+function App (){
+    return (
+    <div>
+        <h1>Saona Deco Home</h1>
+        <ProfileCard titulo="Mantel" arroba="Tokio"/>
+        <ProfileCard titulo="Alfombra" arroba="Chicago" />
+        <ProfileCard titulo="Almohadon" arroba="Paraiso"/>
+        <ProfileCard titulo="Cubresillon" arroba="Amsterdam"/>
     </div>
-  );
+    )
 }
 
-export default App;
+
+
+
+
+export default App; 
